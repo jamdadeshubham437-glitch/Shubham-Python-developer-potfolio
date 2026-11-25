@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shubham Jamdade — Python Developer portfolio. Projects in Python, Django, REST APIs and databases.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shubham Jamdade — Python Developer portfolio. Python, backend development, web applications and projects.">
+  <meta name="theme-color" content="#0b0f0d">
   <title>Shubham Jamdade | Python Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,140 +12,97 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="topbar">
-    <a class="brand" href="#home"><span class="brand-mark">S</span> shubham<span class="muted">.dev</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact" class="nav-cta">Contact</a>
+  <div class="page-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Shubham home"><span class="brand-mark">S</span><span>shubham<span class="muted">.dev</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a class="nav-cta" href="#contact">Contact <span>↗</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero section" id="home">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> OPEN TO PYTHON DEVELOPER OPPORTUNITIES</div>
-        <p class="intro">Hello, I'm</p>
+        <p class="eyebrow"><span class="pulse"></span> OPEN TO PYTHON DEVELOPER OPPORTUNITIES</p>
+        <p class="hello">Hello, I'm</p>
         <h1>Shubham<br><span>Jamdade.</span></h1>
-        <h2>Python Developer <span class="slash">/</span> Backend Enthusiast</h2>
-        <p class="hero-text">I build practical web applications and backend solutions with Python. I enjoy turning ideas into useful, well-structured software and continuously improving my development skills.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Explore my work <span>↗</span></a>
-          <a class="button secondary" href="#contact">Get in touch</a>
-        </div>
-        <div class="quick-links">
-          <a href="https://github.com/jamdadeshubham437-glitch" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/shubham-jamdade" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <h2>Python Developer <i>/</i> Backend Enthusiast</h2>
+        <p class="hero-text">I enjoy building practical web applications and backend solutions with Python. I’m focused on learning, writing clear code, and turning ideas into useful software.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="button button-ghost" href="#contact">Get in touch</a></div>
+        <div class="social-row">
+          <a href="https://github.com/jamdadeshubham437-glitch" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/shubham-jamdade" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
           <span>Hyderabad, India</span>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="code-window">
-          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>developer.py</span><span class="window-label">PYTHON</span></div>
-          <div class="code-content">
-            <div><span class="line-no">01</span><span class="kw">class</span> <span class="class-name">Developer</span>:</div>
-            <div><span class="line-no">02</span>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">__init__</span>(self):</div>
-            <div><span class="line-no">03</span>&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="str">"Shubham"</span></div>
-            <div><span class="line-no">04</span>&nbsp;&nbsp;&nbsp;&nbsp;self.focus = <span class="str">"Backend"</span></div>
-            <div><span class="line-no">05</span>&nbsp;&nbsp;&nbsp;&nbsp;self.stack = [</div>
-            <div><span class="line-no">06</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Python"</span>, <span class="str">"Django"</span>,</div>
-            <div><span class="line-no">07</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"REST APIs"</span>, <span class="str">"SQL"</span></div>
-            <div><span class="line-no">08</span>&nbsp;&nbsp;&nbsp;&nbsp;]</div>
-            <div><span class="line-no">09</span>&nbsp;</div>
-            <div><span class="line-no">10</span>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">build</span>(self, idea):</div>
-            <div><span class="line-no">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"useful software"</span></div>
-            <div><span class="line-no">12</span><span class="cursor">▍</span></div>
-          </div>
-          <div class="code-footer"><span><b></b> Ready to build</span><span>UTF-8&nbsp;&nbsp; Python 3</span></div>
-        </div>
-        <div class="floating-chip chip-one">⌘ Clean code</div><div class="floating-chip chip-two">✦ Keep learning</div>
+      <div class="code-card" aria-label="Python code illustration">
+        <div class="code-top"><div class="window-dots"><b></b><b></b><b></b></div><span>developer.py</span><label>PYTHON</label></div>
+        <pre><code><span class="ln">01</span> <span class="kw">class</span> <span class="type">Developer</span>:
+<span class="ln">02</span>   <span class="kw">def</span> <span class="fn">__init__</span>(self):
+<span class="ln">03</span>     self.name = <span class="str">"Shubham"</span>
+<span class="ln">04</span>     self.focus = <span class="str">"Backend"</span>
+<span class="ln">05</span>     self.stack = [
+<span class="ln">06</span>       <span class="str">"Python"</span>, <span class="str">"Django"</span>,
+<span class="ln">07</span>       <span class="str">"REST APIs"</span>, <span class="str">"SQL"</span>
+<span class="ln">08</span>     ]
+<span class="ln">09</span>
+<span class="ln">10</span>   <span class="kw">def</span> <span class="fn">build</span>(self, idea):
+<span class="ln">11</span>     <span class="kw">return</span> <span class="str">"useful software"</span>
+<span class="ln">12</span> <span class="cursor">▋</span></code></pre>
+        <div class="code-bottom"><span><i></i> Ready to build</span><span>UTF-8&nbsp; · &nbsp;Python 3</span></div>
+        <div class="floating-tag">✦ Keep learning</div>
       </div>
       <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
 
     <section class="section about-section" id="about">
-      <div class="section-kicker">01 / ABOUT</div>
-      <div class="section-grid">
-        <h2 class="section-title">Building with<br><span>purpose.</span></h2>
-        <div class="about-copy">
-          <p class="lead">I'm an aspiring Full Stack Python Developer based in Hyderabad, India.</p>
-          <p>My focus is on Python-based application development, backend logic, database-driven features and writing code that is clear and maintainable. I’m currently pursuing a BSc in Computer Science and building projects to strengthen my practical development experience.</p>
-          <div class="about-stats">
-            <div><strong>Python</strong><span>Core language</span></div>
-            <div><strong>Django</strong><span>Web development focus</span></div>
-            <div><strong>2027</strong><span>Expected graduation</span></div>
-          </div>
-        </div>
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Curious mind.<br><span>Practical builder.</span></h2></div>
+      <div class="about-content">
+        <p class="lead">I’m an aspiring Python developer interested in backend development and building useful web applications.</p>
+        <p>I’m developing my skills in Python, Django, databases and API development through hands-on projects and continuous learning. I value readable code, steady improvement and solving real problems.</p>
+        <div class="mini-stats"><div><strong>Python</strong><span>Core focus</span></div><div><strong>Backend</strong><span>Area of interest</span></div><div><strong>2027</strong><span>Expected graduation</span></div></div>
       </div>
     </section>
 
     <section class="section" id="skills">
-      <div class="section-kicker">02 / TOOLKIT</div>
-      <div class="section-heading"><h2 class="section-title">My technical <span>toolkit.</span></h2><p>Technologies I’m learning and using to build software.</p></div>
+      <div class="section-heading"><p class="eyebrow">02 / TOOLKIT</p><h2>Skills & <span>technologies.</span></h2><p class="section-intro">Technologies I’m learning and using as I grow as a developer.</p></div>
       <div class="skill-grid">
-        <article class="skill-card"><div class="skill-icon">Py</div><h3>Python</h3><p>Programming fundamentals, functions, OOP and problem solving.</p><span class="tag">LANGUAGE</span></article>
-        <article class="skill-card"><div class="skill-icon">Dj</div><h3>Django</h3><p>Web application structure, models, views, templates and CRUD.</p><span class="tag">BACKEND</span></article>
-        <article class="skill-card"><div class="skill-icon">API</div><h3>REST APIs</h3><p>Learning API design, request/response handling and integration.</p><span class="tag">BACKEND</span></article>
-        <article class="skill-card"><div class="skill-icon">DB</div><h3>SQL & Databases</h3><p>Working with relational data and database-backed applications.</p><span class="tag">DATA</span></article>
-        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Git & GitHub</h3><p>Version control, repositories and documenting development work.</p><span class="tag">TOOLS</span></article>
-        <article class="skill-card"><div class="skill-icon">⌁</div><h3>HTML, CSS & JS</h3><p>Building responsive interfaces for web applications.</p><span class="tag">FRONTEND</span></article>
+        <article class="skill-card"><div class="skill-icon">Py</div><h3>Languages</h3><p>Python · SQL · HTML · CSS · JavaScript</p></article>
+        <article class="skill-card"><div class="skill-icon">Be</div><h3>Backend</h3><p>Django · REST API fundamentals</p></article>
+        <article class="skill-card"><div class="skill-icon">Db</div><h3>Databases</h3><p>SQL · Relational database concepts</p></article>
+        <article class="skill-card"><div class="skill-icon">Git</div><h3>Tools</h3><p>Git · GitHub · VS Code</p></article>
       </div>
+      <p class="note">Please keep this section aligned with the tools you can confidently discuss in an interview.</p>
     </section>
 
     <section class="section projects-section" id="projects">
-      <div class="section-kicker">03 / SELECTED WORK</div>
-      <div class="section-heading"><h2 class="section-title">Projects in <span>progress.</span></h2><p>Hands-on work that demonstrates how I approach real development problems.</p></div>
-      <article class="project-card featured">
-        <div class="project-visual expense-visual">
-          <div class="mini-dashboard">
-            <div class="mini-top"><span>MOOD & EXPENSE TRACKER</span><span class="mini-live">● PROJECT</span></div>
-            <div class="mini-balance"><small>Monthly overview</small><strong>Track your spending</strong></div>
-            <div class="mini-bars"><i style="height:42%"></i><i style="height:68%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:60%"></i><i style="height:74%"></i><i style="height:48%"></i></div>
-            <div class="mini-bottom"><span>Expenses</span><span>Categories</span><span>Mood notes</span></div>
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-meta"><span>FEATURED PROJECT</span><span>01 / 01</span></div>
-          <h3>Mood & Expense Tracker</h3>
-          <p>A personal project concept combining expense tracking with mood journaling, designed to help users reflect on spending patterns and daily habits.</p>
-          <div class="project-tags"><span>Python</span><span>Web App</span><span>Database</span></div>
-          <a class="text-link" href="https://github.com/jamdadeshubham437-glitch/mood-expense-tracker" target="_blank" rel="noreferrer">View GitHub repository <span>↗</span></a>
-          <p class="small-note">Add a live demo link and update the technology tags to match the actual implementation before applying.</p>
-        </div>
+      <div class="section-heading heading-inline"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects in <span>progress.</span></h2></div><a class="text-link" href="https://github.com/jamdadeshubham437-glitch" target="_blank" rel="noreferrer">View GitHub profile ↗</a></div>
+      <article class="project-card">
+        <div class="project-number">01</div>
+        <div class="project-main"><p class="project-type">PERSONAL PROJECT</p><h3>Mood Expense Tracker</h3><p>A project focused on bringing expense tracking and mood-related records together. Explore the source code and implementation on GitHub.</p><div class="tags"><span>Python project</span><span>GitHub</span></div></div>
+        <a class="project-link" href="https://github.com/jamdadeshubham437-glitch/mood-expense-tracker" target="_blank" rel="noreferrer" aria-label="View Mood Expense Tracker on GitHub">↗</a>
       </article>
-      <div class="project-note"><span>+</span><p><strong>More projects coming soon.</strong><br>New builds will be added here as I complete and publish them.</p></div>
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <div class="project-main"><p class="project-type">PORTFOLIO WEBSITE</p><h3>Developer Portfolio</h3><p>A responsive personal website built to present my skills, learning journey and development projects.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div></div>
+        <a class="project-link" href="https://github.com/jamdadeshubham437-glitch/Shubham-Python-developer-portfolio" target="_blank" rel="noreferrer" aria-label="View portfolio source on GitHub">↗</a>
+      </article>
     </section>
 
     <section class="section education-section" id="education">
-      <div class="section-kicker">04 / EDUCATION</div>
-      <div class="section-grid">
-        <h2 class="section-title">Learning is<br><span>ongoing.</span></h2>
-        <div class="education-card">
-          <div class="education-year">EXPECTED 2027</div>
-          <h3>Bachelor of Science — Computer Science</h3>
-          <p>Modern College of Computer Science & IT</p>
-          <span class="education-status"><i></i> Currently pursuing</span>
-        </div>
-      </div>
+      <div class="section-heading"><p class="eyebrow">04 / EDUCATION</p><h2>Learning is a <span>journey.</span></h2></div>
+      <div class="education-card"><div class="edu-mark">EDU</div><div><p class="project-type">UNDERGRADUATE</p><h3>Bachelor of Science in Computer Science</h3><p>Modern College of Computer Science and IT</p><p class="edu-meta">Pursuing · Expected completion: 2027</p></div><span class="edu-status">IN PROGRESS</span></div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="section-kicker">05 / CONTACT</div>
-      <div class="contact-panel">
-        <p class="eyebrow">HAVE AN OPPORTUNITY?</p>
-        <h2>Let's build<br><span>something useful.</span></h2>
-        <p class="contact-text">I'm interested in junior Python Developer, Django Backend and internship opportunities. Feel free to connect with me.</p>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:shubhamjamdade476@gmail.com">Email me ↗</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/shubham-jamdade" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
-          <a class="button secondary" href="https://github.com/jamdadeshubham437-glitch" target="_blank" rel="noreferrer">GitHub ↗</a>
-        </div>
-        <p class="contact-text">shubhamjamdade476@gmail.com</p>
-      </div>
+      <p class="eyebrow">05 / CONTACT</p><h2>Have an opportunity<br>or a <span>project in mind?</span></h2>
+      <p class="contact-copy">I’m interested in connecting with people, learning from experienced developers and exploring suitable Python developer opportunities.</p>
+      <div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/shubham-jamdade" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a class="button button-ghost" href="https://github.com/jamdadeshubham437-glitch" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div>
+      <p class="contact-note">For direct contact, use the contact details on my LinkedIn profile.</p>
     </section>
   </main>
-
-  <footer><a class="brand" href="#home"><span class="brand-mark">S</span> shubham<span class="muted">.dev</span></a><span>Designed & built with curiosity.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <footer><a class="brand" href="#home"><span class="brand-mark">S</span><span>shubham<span class="muted">.dev</span></span></a><span>Designed & built by Shubham Jamdade</span><a href="#home">Back to top ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
